@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Popup form</title>
+	</head>
+	<body>
+		<div class="center__container">
+			<button class="form__btn">OPEN</button>
+		</div>
+		<template id="popup">
+			<div class="form__container">
+				<div class="form__landing">
+					<button class="form__close">X</button>
+					<h1 class="form__header">Witaj!</h1>
+					<h3 class="form__subheading">
+						Wypełnij formularz i zgarnij
+						<span class="text--green">kupon rabatowy</span> do wykorzystania przy
+						najbliższych zakupach.
+					</h3>
+					<div class="form__inputs">
+						<div class="form__input">
+							<label class="form__input-label" for="email">Email</label>
+							<input type="email" id="email" name="email" />
+						</div>
+						<div class="form__input">
+							<label class="form__input-label" for="name">Name</label>
+							<input type="text" id="name" name="name" />
+						</div>
+					</div>
+					<div class="form__terms">
+						<input type="checkbox" id="terms" name="terms" />
+						<label for="terms"
+							>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae
+							metus luctus sem porta ornare. Sed faucibus sit amet elit in semper.
+							Phasellus sagittis velit eget varius eleifend. Sed non velit eget leo
+							iaculis tristique. Vivamus pharetra elementum sodales.</label
+						>
+					</div>
+					<div class="form__errors"></div>
+					<div class="form__send">
+						<button class="form__btn" type="button">Wyślij</button>
+					</div>
+				</div>
+				<div class="form__submitted hidden">
+					<button class="form__close">X</button>
+					<h1 class="form__header form__header--margin">Dziękujemy</h1>
+					<h3 class="form__subheading form__subheading--margin">
+						Za wypełnienie formularza, kod rabatowy czeka na ciebie na twojej skrzynce
+						pocztowej.
+					</h3>
+				</div>
+			</div>
+		</template>
+		<script src="/main.js"></script>
+	</body>
+</html>
